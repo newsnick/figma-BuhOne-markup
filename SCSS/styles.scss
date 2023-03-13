@@ -1,7 +1,3 @@
-* {
-  @include body;
-}
-
 @import "_global.scss";
 @import "fonts.scss";
 @import "sections/navi.scss";
@@ -11,3 +7,7 @@
 @import "sections/companies.scss";
 @import "sections/testimonies.scss";
 @import "sections/footer.scss";
+
+* {
+  @include body;
+}

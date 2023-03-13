@@ -1,0 +1,62 @@
+.container4 {
+  background-color: $greybg;
+}
+
+.company {
+  @include companysize;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slider-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bbb;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.slider-dot.active {
+  background-color: #717171;
+}
+
+.slider-arrows {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.slider-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  cursor: pointer;
+}
+
+.slider-arrow-left {
+  border-width: 15px 20px 15px 0;
+  border-color: transparent #555 transparent transparent;
+  margin-right: 10px;
+}
+
+.slider-arrow-right {
+  border-width: 15px 0 15px 20px;
+  border-color: transparent transparent transparent #555;
+  margin-left: 10px;
+}

@@ -1,0 +1,31 @@
+$greybg: #ebebeb;
+
+h2 {
+  @include header2;
+}
+
+p {
+  @include header;
+}
+
+.container2 {
+  background-color: $greybg;
+}
+
+.header_container2 {
+  padding: 10%;
+}
+
+.images_container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-bottom: 15%;
+}
+
+.images_container2 img {
+  width: 30%;
+  margin: 10px;
+}

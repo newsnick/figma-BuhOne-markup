@@ -1,0 +1,74 @@
+$blue: #005fa3;
+
+.post h2 {
+  @include postheader;
+}
+
+.post p {
+  @include posttext;
+}
+
+.container3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15%;
+}
+
+.cubes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cube {
+  border: 2px solid green;
+  width: 255px;
+  height: 255px;
+  margin: 10px;
+  background-color: $greybg;
+  padding: 5%;
+}
+
+.cube:hover {
+  border: 4px solid #005fa3;
+}
+
+.posts {
+  width: 445px;
+  height: 435px;
+  border: 2px solid blue;
+}
+
+.cubetext1 .cubetext2 .cubetext3 {
+  font-family: "Lato";
+  font-style: normal;
+}
+
+.cubetext1 {
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 66px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.cubetext2 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 10%;
+  padding-bottom: 20%;
+  max-width: 107px;
+  color: #000000;
+}
+
+.cubetext3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration-line: underline;
+  color: #005fa3;
+}

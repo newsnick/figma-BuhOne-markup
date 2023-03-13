@@ -1,4 +1,33 @@
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .nav_bar {
-  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   border: 2px solid red;
+  gap: 10%;
+}
+
+.nav_left {
+  display: flex;
+  align-items: center;
+
+  gap: 10%;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 50px;
+  color: #005fa3;
+}
+
+ul {
+  @include list;
+  display: flex;
+  gap: 5%;
 }
