@@ -213,11 +213,13 @@ p {
 
 .container4 {
   background-color: #ebebeb;
+  padding: 10%;
 }
 
 .company {
   width: 255px;
   height: 130px;
+  padding-top: 5%;
 }
 
 .slider-container {
@@ -289,6 +291,75 @@ p {
   border-width: 15px 0 15px 20px;
   border-color: transparent transparent transparent #555;
   margin-left: 10px;
+}
+
+.container5 {
+  padding: 10%;
+}
+
+.container6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("/assets/desktop/images/footerimg.svg");
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer_left {
+  padding: 10% 5%;
+  max-width: 50%;
+}
+
+.text_footer {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 69px;
+  color: #ffffff;
+}
+
+.text2_footer,
+.text3_footer,
+.text4_footer {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.text2_footer {
+  font-size: 18px;
+  line-height: 25px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.text3_footer,
+.text4_footer {
+  font-size: 21px;
+  line-height: 29px;
+}
+
+.footer_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2%;
+}
+
+.phone_footer,
+.mail_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5%;
+  width: 100%;
+  padding-top: 10%;
 }
 
 * {

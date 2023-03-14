@@ -10,7 +10,7 @@
   </head>
   <body>
     <main class="main_container">
-      <!--   <section class="container1">
+      <header class="container1">
         <nav class="nav_bar">
           <nav class="nav_left">
             <img src="assets/desktop/icons/navirectangle.svg" alt="rectangle" />
@@ -28,26 +28,7 @@
           </nav>
         </nav>
         <div class="intro_slide"></div>
-      </section> -->
-      <section class="container1">
-        <nav class="nav_bar">
-          <nav class="nav_left">
-            <img src="assets/desktop/icons/navirectangle.svg" alt="rectangle" />
-            <img src="assets/desktop/icons/navilogo.svg" alt="logo" />
-            <p class="logo">BuhOne</p>
-          </nav>
-          <nav class="nav_right">
-            <ul>
-              <li>Главная</li>
-              <li>услуги</li>
-              <li>кейсы</li>
-              <li>o_компании</li>
-              <li>контакты</li>
-            </ul>
-          </nav>
-        </nav>
-        <div class="intro_slide"></div>
-      </section>
+      </header>
 
       <section class="container2">
         <header class="header_container2">
@@ -221,8 +202,51 @@
           />
         </div> -->
       </section>
-      <section class="container5"></section>
-      <footer class="container6"></footer>
+      <section class="container5">
+        <div class="top_container5">
+          <h2>Отзывы</h2>
+          <p>Ваши благодарности</p>
+        </div>
+        <div class="testimonials-fetch"></div>
+      </section>
+      <footer class="container6">
+        <div class="footer_left">
+          <p class="text_footer">Связь с нами</p>
+          <p class="text2_footer">
+            У вас остались вопросы? Напишите нам - мы ответим в ближайшее время!
+          </p>
+          <div class="footer_bottom">
+            <div class="phone_footer">
+              <img src="assets/desktop/icons/phone.svg" alt="call" />
+              <p class="text3_footer">+7 (111) 222-33-44</p>
+            </div>
+            <div class="mail_footer">
+              <img src="assets/desktop/icons/mail.svg" alt="mailme" />
+              <p class="text4_footer">order@bu-one.ru</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer_right">
+          <form
+            action="mailto:atlcontact8@gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" /><br /><br />
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" /><br /><br />
+
+            <label for="message">Message:</label><br />
+            <textarea id="message" name="message" rows="10" cols="50"></textarea
+            ><br /><br />
+
+            <input type="submit" value="Send Email" />
+          </form>
+        </div>
+        <div></div>
+      </footer>
     </main>
   </body>
 </html>

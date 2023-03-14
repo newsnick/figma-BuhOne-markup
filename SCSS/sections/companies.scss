@@ -1,9 +1,11 @@
 .container4 {
   background-color: $greybg;
+  padding: 10%;
 }
 
 .company {
   @include companysize;
+  padding-top: 5%;
 }
 
 .slider-container {

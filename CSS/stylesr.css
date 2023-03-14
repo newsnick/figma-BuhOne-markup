@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+.container1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav_bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid red;
+}
+
+ul {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #222222;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.intro_slide {
+  background-image: url("/assets/desktop/images/introbackground.svg");
+  height: 50vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.intro_slide h2 {
+  font-size: 20px;
+  line-height: 27px;
+}
+.intro_slide p {
+  font-size: 36px;
+  line-height: 52px;
+}
+
+.container2 {
+  background-color: #ebebeb;
+}
+.container2 .header_container2 {
+  padding: 5%;
+}
+.container2 .images_container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70vh;
+  margin-bottom: 10%;
+}
+.container2 .images_container2 img {
+  width: 40%;
+  margin: 5px;
+}
+
+.container3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15%;
+  /* Media Query for Mobile Devices */
+}
+@media (max-width: 768px) {
+  .container3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10%;
+  }
+}
+
+/* Cubes */
+.cubes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* Cube */
+.cube {
+  border: 2px solid green;
+  width: 255px;
+  height: 255px;
+  margin: 10px;
+  background-color: #ebebeb;
+  padding: 5%;
+  /* Media Query for Mobile Devices */
+}
+@media (max-width: 768px) {
+  .cube {
+    width: 100%;
+  }
+}
+
+/* Cube Text */
+.cubetext1,
+.cubetext2,
+.cubetext3 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+}
+
+/* Cube Text 1 */
+.cubetext1 {
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 66px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  /* Media Query for Mobile Devices */
+}
+@media (max-width: 768px) {
+  .cubetext1 {
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+/* Cube Text 2 */
+.cubetext2 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 10%;
+  padding-bottom: 20%;
+  max-width: 107px;
+  color: #000000;
+  /* Media Query for Mobile Devices */
+}
+@media (max-width: 768px) {
+  .cubetext2 {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    max-width: 100%;
+    padding-bottom: 10%;
+  }
+}
+
+/* Cube Text 3 */
+.cubetext3 {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  color: #005fa3;
+  text-align: right;
+  /* Media Query for Mobile Devices */
+}
+@media (max-width: 768px) {
+  .cubetext3 {
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
