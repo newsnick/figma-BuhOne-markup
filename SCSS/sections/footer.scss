@@ -1,5 +1,8 @@
+$whiteText: #ffffff;
+
 .container6 {
   display: flex;
+  justify-content: space-around;
   background-image: url("/assets/desktop/images/footerimg.svg");
   height: 100vh;
   width: 100%;
@@ -12,20 +15,29 @@
   max-width: 50%;
 }
 
+.footer_right {
+  padding: 10% 5%;
+  max-width: 50%;
+}
+
 .text_footer {
   font-weight: 900;
   font-size: 48px;
   line-height: 69px;
-  color: #ffffff;
+  color: $whiteText;
 }
 
 .text2_footer,
 .text3_footer,
-.text4_footer {
+.text4_footer,
+.label,
+#first_name,
+#last_name,
+#message {
   font-family: "Lato";
   font-style: normal;
   font-weight: 300;
-  color: #ffffff;
+  color: $whiteText;
 }
 
 .text2_footer {
@@ -53,4 +65,31 @@
   gap: 5%;
   width: 100%;
   padding-top: 10%;
+}
+
+#first_name,
+#last_name,
+#message {
+  background-color: transparent;
+  border: none;
+  color: #bdbdbd;
+  border-bottom: thin solid white;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+
+#message {
+  max-height: 16vh;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.submit {
+  @include button;
+  color: $whiteText;
+  float: right;
 }

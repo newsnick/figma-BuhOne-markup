@@ -13,16 +13,17 @@ $blue: #005fa3;
   justify-content: center;
   align-items: center;
   padding: 15%;
+  gap: 5%;
 }
 
 .cubes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  min-width: 35em;
 }
 
 .cube {
-  border: 2px solid green;
   width: 255px;
   height: 255px;
   margin: 10px;
@@ -37,7 +38,6 @@ $blue: #005fa3;
 .posts {
   width: 445px;
   height: 435px;
-  border: 2px solid blue;
 }
 
 .cubetext1 .cubetext2 .cubetext3 {

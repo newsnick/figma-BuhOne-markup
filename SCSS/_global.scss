@@ -61,3 +61,12 @@
   width: 255px;
   height: 130px;
 }
+
+@mixin button {
+  width: 270px;
+  height: 60px;
+  background: #005fa3;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
