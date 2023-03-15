@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Merriweather";
+  font-family: "Merriweather", "Lucida Sans";
   font-style: normal;
 }
 
 @mixin list {
-  font-family: "Lato";
+  font-family: "Lato", "Lucida Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -30,7 +30,7 @@
 }
 
 @mixin header {
-  font-family: "Merriweather";
+  font-family: "Merriweather", "Lucida Sans";
   font-style: normal;
   font-weight: 900;
   font-size: 48px;
@@ -56,7 +56,7 @@
 }
 
 @mixin postheader {
-  font-family: "Merriweather";
+  font-family: "Merriweather", "Lucida Sans";
   font-style: normal;
   font-weight: 900;
   font-size: 48px;

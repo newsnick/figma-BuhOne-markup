@@ -48,7 +48,7 @@
 }
 
 ul {
-  font-family: "Lato";
+  font-family: "Lato", "Lucida Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -163,7 +163,7 @@ h2 {
 }
 
 p {
-  font-family: "Merriweather";
+  font-family: "Merriweather", "Lucida Sans";
   font-style: normal;
   font-weight: 900;
   font-size: 48px;
@@ -171,17 +171,8 @@ p {
   color: #333333;
 }
 
-.container2 {
-  background-color: #ebebeb;
-}
-
 .header_container2 {
   padding: 10%;
-}
-
-body {
-  background-color: #fff;
-  color: #fff;
 }
 
 .images_container2 {
@@ -229,7 +220,7 @@ body {
 }
 
 .post h2 {
-  font-family: "Merriweather";
+  font-family: "Merriweather", "Lucida Sans";
   font-style: normal;
   font-weight: 900;
   font-size: 48px;
@@ -584,6 +575,6 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Merriweather";
+  font-family: "Merriweather", "Lucida Sans";
   font-style: normal;
 }
