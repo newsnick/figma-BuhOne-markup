@@ -14,7 +14,7 @@
   </head>
   <body>
     <main class="main_container">
-      <header class="container1">
+      <header id="section1" class="container1">
         <nav class="nav_bar">
           <nav class="nav_left">
             <img src="assets/desktop/icons/navilogo.svg" alt="logo" />
@@ -28,8 +28,17 @@
               <li>o_компании</li>
               <li>контакты</li>
             </ul>
-          
+           <div class="dropdown">
+              <button class="dropbtn">menu</button>
+              <div class="dropdown-content">
+                <a href="#section1">home</a>
+                <a href="#section2">view images</a>
+                <a href="#section3">view posts</a>
+                <a href="#section4">our partners</a>
+                <a href="#section5">testimonials</a>
+              </div>
             </div>
+            
           </nav>
         </nav>
         <div class="intro_slide">
@@ -51,8 +60,9 @@
           </div>
       </header>
 
-      <section class="container2">
+      <section id="section2" class="container2">
         <header class="header_container2">
+          <button class="scroll-to-top" onclick="scrollToTop()">Scroll to top</button>
           <h2>Наши услуги</h2>
           <p>С нами работают</p>
         </header>
@@ -65,7 +75,7 @@
           <img src="assets/desktop/images/mainimage.svg" alt="mainimg" />
         </div> 
       </section>
-      <section class="container3">
+      <section id="section3" class="container3">
         <article class="posts"></article>
         <div class="cubes">
           <div class="cube">
@@ -90,7 +100,7 @@
           </div>
         </div>
       </section>
-      <section class="container4">
+      <section id="section4" class="container4">
         <div>
           <h2>Наши клиенты</h2>
           <p>С нами работают</p>
@@ -223,7 +233,7 @@
           />
         </div> -->
       </section>
-      <section class="container5">
+      <section id="section5" class="container5">
         <div class="top_container5">
           <h2>Отзывы</h2>
           <p>Ваши благодарности</p>
@@ -238,7 +248,7 @@
         </div><div class="buttons"><button class="left-arrow">&lt;</button>
           <button class="right-arrow">&gt;</button></div>
       </section>
-      <footer class="container6">
+      <footer id="section6"  class="container6">
         <div class="footer_left">
           <p class="text_footer">Связь с нами</p>
           <p class="text2_footer">

@@ -1,3 +1,6 @@
+$slidercolor: #555;
+$sliderbg: #bbb;
+
 .container4 {
   background-color: $greybg;
   padding: 10%;
@@ -26,7 +29,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #bbb;
+  background-color: $sliderbg;
   margin: 0 4px;
   cursor: pointer;
 }
@@ -54,12 +57,12 @@
 
 .slider-arrow-left {
   border-width: 15px 20px 15px 0;
-  border-color: transparent #555 transparent transparent;
+  border-color: transparent $slidercolor transparent transparent;
   margin-right: 10px;
 }
 
 .slider-arrow-right {
   border-width: 15px 0 15px 20px;
-  border-color: transparent transparent transparent #555;
+  border-color: transparent transparent transparent $slidercolor;
   margin-left: 10px;
 }

@@ -1,3 +1,9 @@
+$greenbtn: #4caf50;
+$ddcolor: #f9f9f9;
+$ddgrey: #ccc;
+$ddbg: #f1f1f1;
+$logocolor: #005fa3;
+
 .container1 {
   display: flex;
   justify-content: center;
@@ -8,7 +14,6 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
   gap: 15%;
   padding: 5%;
 }
@@ -16,15 +21,19 @@
 .nav_left {
   display: flex;
   align-items: center;
-
   gap: 10%;
+}
+
+.nav_right {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
   font-weight: 900;
   font-size: 36px;
   line-height: 50px;
-  color: #005fa3;
+  color: $logocolor;
 }
 
 ul {
@@ -32,3 +41,86 @@ ul {
   display: flex;
   gap: 5%;
 }
+
+//dropdown menu
+
+.dropbtn {
+  background-color: #fff;
+  color: $greenbtn;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  margin-left: 120px;
+  margin-bottom: 11px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: $ddcolor;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: $dotcolor;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: $ddbg;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.active {
+  background-color: $greenbtn;
+  color: $whiteText;
+}
+
+@media screen and (max-width: 600px) {
+  .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background-color: $ddcolor;
+  }
+
+  .dropdown {
+    display: block;
+    width: 100%;
+  }
+
+  .dropdown-content {
+    position: static;
+    display: none;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .dropdown-content a {
+    display: block;
+    border-bottom: 1px solid $ddgrey;
+  }
+
+  .active {
+    background-color: transparent;
+  }
+}
+
+.scroll-to-top {
+  @include scrollTop;
+}
+//

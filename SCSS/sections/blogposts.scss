@@ -1,4 +1,5 @@
-$blue: #005fa3;
+$bluestyle: #005fa3;
+$blackstyle: #000000;
 
 .post h2 {
   @include postheader;
@@ -32,7 +33,7 @@ $blue: #005fa3;
 }
 
 .cube:hover {
-  border: 4px solid #005fa3;
+  border: 4px solid $bluestyle;
 }
 
 .posts {
@@ -41,7 +42,7 @@ $blue: #005fa3;
 }
 
 .cubetext1 .cubetext2 .cubetext3 {
-  font-family: "Lato";
+  font-family: 'Lato';
   font-style: normal;
 }
 
@@ -52,23 +53,24 @@ $blue: #005fa3;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
-  color: #000000;
+  color: $blackstyle;
+}
+
+.cubetext2 .cubetext3 {
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .cubetext2 {
-  font-weight: 700;
-  font-size: 14px;
   line-height: 18px;
   padding-top: 10%;
   padding-bottom: 20%;
   max-width: 107px;
-  color: #000000;
+  color: $blackstyle;
 }
 
 .cubetext3 {
-  font-weight: 700;
-  font-size: 14px;
   line-height: 17px;
   text-decoration-line: underline;
-  color: #005fa3;
+  color: $bluestyle;
 }

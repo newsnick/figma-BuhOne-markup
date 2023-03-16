@@ -3,7 +3,7 @@ $whiteText: #ffffff;
 .container6 {
   display: flex;
   justify-content: space-around;
-  background-image: url("/assets/desktop/images/footerimg.svg");
+  background-image: url('/assets/desktop/images/footerimg.svg');
   height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
@@ -34,7 +34,7 @@ $whiteText: #ffffff;
 #first_name,
 #last_name,
 #message {
-  font-family: "Lato";
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
   color: $whiteText;
@@ -73,7 +73,7 @@ $whiteText: #ffffff;
   background-color: transparent;
   border: none;
   color: #bdbdbd;
-  border-bottom: thin solid white;
+  border-bottom: thin solid $whiteText;
   padding-top: 5%;
   padding-bottom: 3%;
 }

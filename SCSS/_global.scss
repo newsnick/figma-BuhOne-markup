@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Merriweather", "Lucida Sans";
+  font-family: 'Merriweather', 'Lucida Sans';
   font-style: normal;
 }
 
 @mixin list {
-  font-family: "Lato", "Lucida Sans";
+  font-family: 'Lato', 'Lucida Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -30,7 +30,7 @@
 }
 
 @mixin header {
-  font-family: "Merriweather", "Lucida Sans";
+  font-family: 'Merriweather', 'Lucida Sans';
   font-style: normal;
   font-weight: 900;
   font-size: 48px;
@@ -39,7 +39,7 @@
 }
 
 @mixin header2 {
-  font-family: "Lato";
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 900;
   font-size: 24px;
@@ -47,7 +47,7 @@
   color: #bdbdbd;
 }
 @mixin posttext {
-  font-family: "Lato";
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -56,7 +56,7 @@
 }
 
 @mixin postheader {
-  font-family: "Merriweather", "Lucida Sans";
+  font-family: 'Merriweather', 'Lucida Sans';
   font-style: normal;
   font-weight: 900;
   font-size: 48px;
@@ -76,4 +76,21 @@
   font-size: 18px;
   line-height: 25px;
   text-align: center;
+}
+
+@mixin scrollTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
