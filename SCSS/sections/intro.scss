@@ -17,6 +17,7 @@ button {
   @include button;
   margin-top: 5%;
   color: $whiteText;
+  cursor: pointer;
 }
 
 .mainslider {
