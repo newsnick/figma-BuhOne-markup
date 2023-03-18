@@ -1,3 +1,10 @@
+$textblack: #000000;
+$bggrey: #333;
+$textwhite: #ffffff;
+$textdblue: #005fa3;
+$textdgrey: #333333;
+$textlgrey: #bdbdbd;
+
 @mixin body {
   margin: 0;
   padding: 0;
@@ -14,7 +21,7 @@
   line-height: 17px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #222222;
+  color: $textdgrey;
   list-style: none;
 }
 
@@ -26,7 +33,7 @@
   font-weight: 700;
   font-size: 48px;
   line-height: 66px;
-  color: #ffffff;
+  color: $textwhite;
 }
 
 @mixin header {
@@ -35,7 +42,7 @@
   font-weight: 900;
   font-size: 48px;
   line-height: 69px;
-  color: #333333;
+  color: $textdgrey;
 }
 
 @mixin header2 {
@@ -44,7 +51,7 @@
   font-weight: 900;
   font-size: 24px;
   line-height: 33px;
-  color: #bdbdbd;
+  color: $textlgrey;
 }
 @mixin posttext {
   font-family: 'Lato';
@@ -52,7 +59,7 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 25px;
-  color: #000000;
+  color: $textblack;
 }
 
 @mixin postheader {
@@ -61,7 +68,7 @@
   font-weight: 900;
   font-size: 48px;
   line-height: 69px;
-  color: #333333;
+  color: $textdgrey;
 }
 
 @mixin companysize {
@@ -72,7 +79,7 @@
 @mixin button {
   width: 270px;
   height: 60px;
-  background: #005fa3;
+  background: $textdblue;
   font-size: 18px;
   line-height: 25px;
   text-align: center;
@@ -90,8 +97,8 @@
   padding: 10px 15px;
   border: none;
   border-radius: 50%;
-  background-color: #333;
-  color: #fff;
+  background-color: $bggrey;
+  color: $textwhite;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }

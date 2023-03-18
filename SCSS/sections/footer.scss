@@ -72,7 +72,7 @@ $whiteText: #ffffff;
 #message {
   background-color: transparent;
   border: none;
-  color: #bdbdbd;
+  color: $textlgrey;
   border-bottom: thin solid $whiteText;
   padding-top: 5%;
   padding-bottom: 3%;
