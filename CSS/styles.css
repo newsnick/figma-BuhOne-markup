@@ -687,6 +687,7 @@ p {
   text-align: center;
   color: #ffffff;
   float: right;
+  cursor: pointer;
 }
 
 * {

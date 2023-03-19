@@ -17,6 +17,11 @@
   padding: 5%;
 }
 
+a {
+  text-align: center;
+  padding-bottom: 10%;
+}
+
 .nav_left {
   display: flex;
   align-items: center;
@@ -27,7 +32,7 @@
   font-weight: 900;
   font-size: 24px;
   line-height: 32px;
-  color: #005fa3;
+  color: $textdblue;
 }
 
 ul {
@@ -41,10 +46,16 @@ ul {
   color: #222222;
   list-style: none;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 5%;
   margin: 0;
   padding: 0;
+}
+
+button.dropbtn {
+  text-align: center;
+  max-width: 100%;
 }
 
 .intro_slide {
@@ -56,6 +67,7 @@ ul {
   background-size: cover;
   display: flex;
   justify-content: center;
+
   align-items: center;
   padding: 20px;
   text-align: center;
@@ -65,7 +77,7 @@ h1 {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #ffffff;
+  color: $textwhite;
   margin: 0;
 }
 
@@ -73,12 +85,12 @@ button {
   width: 60%;
   max-width: 270px;
   height: 60px;
-  background: #005fa3;
+  background: $textdblue;
   font-size: 18px;
   line-height: 25px;
   text-align: center;
-  margin-top: 5%;
-  color: #ffffff;
+  margin-top: 10%;
+  color: $textwhite;
 }
 
 .mainslider {
@@ -95,6 +107,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
+  min-width: 100%;
 }
 
 .myslide:first-child {
@@ -111,26 +124,25 @@ button {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #bbb;
+  background-color: $sliderbg;
   margin: 0 5px;
   cursor: pointer;
 }
 
 .mydot.active {
-  background-color: #555;
+  background-color: $slidercolor;
 }
 
 .myarrows {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
+  padding-top: 75px;
+  min-width: 100px;
 }
 
 .arrow {
   display: inline-block;
   width: 20px;
   height: 20px;
-  border: solid #555;
+  border: solid $slidercolor;
   border-width: 0 3px 3px 0;
   margin-left: 10px;
   cursor: pointer;
@@ -138,10 +150,12 @@ button {
 
 .arrow.left {
   transform: rotate(135deg);
+  margin-top: 10px;
 }
 
 .arrow.right {
   transform: rotate(-45deg);
+  margin-right: 10px;
 }
 
 h2 {
@@ -149,22 +163,24 @@ h2 {
   font-weight: 900;
   font-size: 1.5rem;
   line-height: 1.375;
-  color: #bdbdbd;
+  text-align: center;
+  color: $textlgrey;
 }
 
 p {
   font-family: 'Merriweather', serif;
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 2rem;
+  text-align: center;
   line-height: 1.4375;
-  color: #333333;
+  color: $textdgrey;
 }
 
 //dropdown menu
 
 .dropbtn {
-  background-color: #fff;
-  color: #333;
+  background-color: $textwhite;
+  color: $dotcolor;
   font-size: 16px;
   border: none;
   cursor: pointer;
@@ -179,20 +195,20 @@ p {
   display: none;
   position: absolute;
   right: 0;
-  background-color: #f9f9f9;
+  background-color: $ddcolor;
   min-width: 160px;
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: #333;
+  color: $dotcolor;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: $ddbg;
 }
 
 .dropdown:hover .dropdown-content {
@@ -200,8 +216,8 @@ p {
 }
 
 .active {
-  background-color: #4caf50;
-  color: white;
+  background-color: $greenbtn;
+  color: $textwhite;
 }
 
 @media screen and (max-width: 600px) {
@@ -209,7 +225,7 @@ p {
     display: block;
     width: 100%;
     text-align: left;
-    background-color: #f9f9f9;
+    background-color: $ddcolor;
   }
 
   .dropdown {
@@ -227,7 +243,7 @@ p {
 
   .dropdown-content a {
     display: block;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid $ddgrey;
   }
 
   .active {
@@ -245,8 +261,8 @@ p {
   padding: 10px 15px;
   border: none;
   border-radius: 50%;
-  background-color: #333;
-  color: #fff;
+  background-color: $dotcolor;
+  color: $textwhite;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
@@ -262,7 +278,7 @@ p {
 //
 
 .container2 {
-  background-color: #ebebeb;
+  background-color: transparent;
 }
 
 .header_container2 {
@@ -290,7 +306,7 @@ p {
 }
 
 .images_container2 img:hover {
-  box-shadow: 0px 0px 10px 0px #3498db;
+  box-shadow: 0px 0px 10px 0px $hovercl;
 }
 
 .images_container2 img:hover::after {
@@ -307,9 +323,9 @@ p {
 .post h2 {
   font-family: 'Merriweather', serif;
   font-weight: 900;
-  font-size: 3rem;
+  text-align: center;
   line-height: 1.4375;
-  color: #333333;
+  color: $textdgrey;
 }
 
 @media screen and (min-width: 768px) {
@@ -336,8 +352,8 @@ p {
   }
 
   .post h2 {
-    font-size: 4rem;
     line-height: 1.125;
+    font-size: 4rem;
   }
 }
 .post p {
@@ -345,6 +361,7 @@ p {
   font-style: normal;
   font-weight: 300;
   font-size: 1em;
+  text-align: center;
   line-height: 1.4em;
   color: #000000;
 }
@@ -368,12 +385,13 @@ p {
   max-width: 255px;
   height: 255px;
   margin: 10px;
-  background-color: #ebebeb;
+  background-color: $greybg;
   padding: 5%;
 }
 
 .cube:hover {
-  border: 4px solid #005fa3;
+  border: 4px solid $textdblue;
+  cursor: grab;
 }
 
 .posts {
@@ -495,6 +513,7 @@ p {
     line-height: 20px;
     padding: 3%;
     margin-top: 3%;
+    text-align: center;
   }
 
   .my-testimonials img {
@@ -519,6 +538,10 @@ p {
   .left-arrow {
     width: 40px;
   }
+}
+
+.buttons {
+  text-align: center;
 }
 
 .container6 {
@@ -549,7 +572,7 @@ p {
   font-weight: 900;
   font-size: 36px;
   line-height: 50px;
-  color: #ffffff;
+  color: $textwhite;
 }
 
 .text2_footer,
@@ -562,7 +585,7 @@ p {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
-  color: #ffffff;
+  color: $textwhite;
 }
 
 .text2_footer {
@@ -600,8 +623,8 @@ p {
 #message {
   background-color: transparent;
   border: none;
-  color: #bdbdbd;
-  border-bottom: thin solid white;
+  color: $textlgrey;
+  border-bottom: thin solid $textwhite;
   padding-top: 5%;
   padding-bottom: 3%;
 }
@@ -619,11 +642,11 @@ p {
 .submit {
   width: 100%;
   height: 60px;
-  background: #005fa3;
+  background: $textdblue;
   font-size: 18px;
   line-height: 25px;
   text-align: center;
-  color: #ffffff;
+  color: $textwhite;
   margin-top: 20px;
 }
 

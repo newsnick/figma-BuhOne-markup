@@ -92,4 +92,5 @@ $whiteText: #ffffff;
   @include button;
   color: $whiteText;
   float: right;
+  cursor: pointer;
 }
