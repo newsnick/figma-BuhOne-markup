@@ -37,8 +37,10 @@ cubes.forEach((cube) => {
 const testimonialsContainer = document.querySelector('.my-testimonials')
 const leftArrow = document.querySelector('.left-arrow')
 const rightArrow = document.querySelector('.right-arrow')
+const dots = document.querySelectorAll('.dotstest')
 
 let currentTestimonialIndex = 0
+let testimonials = []
 
 const fetchTestimonials = () => {
   return new Promise((resolve, reject) => {
@@ -56,8 +58,9 @@ const fetchTestimonials = () => {
     }
     xhr.send()
   })
-    .then((testimonials) => {
-      renderTestimonial(testimonials[currentTestimonialIndex])
+    .then((fetchedTestimonials) => {
+      testimonials = fetchedTestimonials
+      renderTestimonial(currentTestimonialIndex)
 
       return testimonials
     })
@@ -66,34 +69,44 @@ const fetchTestimonials = () => {
     })
 }
 
-const renderTestimonial = (testimonial) => {
-  testimonialsContainer.textContent = testimonial.body
+const renderTestimonial = (index) => {
+  testimonialsContainer.textContent = testimonials[index].body
 
   const profilePicture = document.createElement('img')
   profilePicture.src = `https://picsum.photos/50?random=${Math.floor(
     Math.random() * 100
   )}`
   testimonialsContainer.appendChild(profilePicture)
+
+  dots.forEach((dot, dotIndex) => {
+    dot.classList.toggle('dotstest-active', dotIndex === index)
+  })
 }
 
 const showPreviousTestimonial = () => {
   if (currentTestimonialIndex > 0) {
     currentTestimonialIndex--
-    renderTestimonial(testimonials[currentTestimonialIndex])
+    renderTestimonial(currentTestimonialIndex)
   }
 }
 
 const showNextTestimonial = () => {
   if (currentTestimonialIndex < testimonials.length - 1) {
     currentTestimonialIndex++
-    renderTestimonial(testimonials[currentTestimonialIndex])
+    renderTestimonial(currentTestimonialIndex)
   }
 }
 
-fetchTestimonials().then((fetchedTestimonials) => {
-  testimonials = fetchedTestimonials
+fetchTestimonials().then(() => {
   leftArrow.addEventListener('click', showPreviousTestimonial)
   rightArrow.addEventListener('click', showNextTestimonial)
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      currentTestimonialIndex = index
+      renderTestimonial(currentTestimonialIndex)
+    })
+  })
 })
 
 ////////////////////change background on img click
